@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learn JavaScript</title>
+<!--link google font -->		
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<!--link google font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<style>
+	body{
+		font-family: 'Oswald', sans-serif;
+
+	}
+	#formstyle{
+		width: 350px;
+		height: 450px;
+		border: 2px solid black;
+		margin: auto;
+	}
+
+	.material-symbols-outlined {
+		font-size: 35px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 1,
+  'opsz' 48,
+
+}
+
+
+
+
+	#forms{
+		margin-left: 65px;
+	}
+
+	#result {
+		width: 200px;
+		height: 20px;
+	}
+
+	input{
+		width: 67px;
+		height: 27px;
+	}
+
+	#clear{
+		width: 213px;
+		height: 30px;
+
+	}
+</style>		
+	</head>
+	<body>
+		
+		<div id="formstyle">
+<h1 style="text-align: center">Welcome To Calcultor <span class="material-symbols-outlined">calculate
+</span></h1>
+			<form name="form" id="forms">
+				<input type="text" name="result" id="result"><br><br>
+ 		<input type="button" value=" 1 " onclick="form.result.value+='1'">			
+ 		<input type="button" value=" 2 " onclick="form.result.value+='2'">
+ 		<input type="button" value=" 3 " onclick="form.result.value+='3'"><br><br>
+
+ 		<input type="button" value=" 4 " onclick="form.result.value+='4'">			
+ 		<input type="button" value=" 5 " onclick="form.result.value+='5'">
+ 		<input type="button" value=" 6 " onclick="form.result.value+='6'"><br><br>
+
+ 		<input type="button" value=" 7 " onclick="form.result.value+='7'">			
+ 		<input type="button" value=" 8 " onclick="form.result.value+='8'">
+ 		<input type="button" value=" 9 " onclick="form.result.value+='9'"><br><br>
+
+ 		<input type="button" value=" + " onclick="form.result.value+='+'">			
+ 		<input type="button" value=" - " onclick="form.result.value+='-'">
+ 		<input type="button" value=" * " onclick="form.result.value+='*'"><br><br>
+
+ 		<input type="button" value=" / " onclick="form.result.value+='/'">			
+ 		<input type="button" value=" 0 " onclick="form.result.value+='0'">
+ 		<input type="button" value=" = " onclick="form.result.value=eval(form.result.value)"><br><br>
+
+ 		<input type="button" value="Celer All" onclick="form.result.value=' '" id="clear">
+			</form>
+		</div>
+	</body>
+</html>
